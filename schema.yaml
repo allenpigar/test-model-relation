@@ -1,96 +1,93 @@
-
-  - description: ""
-    label: "Services Page"
-    name: "services_page"
-    sort: 112
-    listed: true
-    parent: "0"
-    hasRoute: true
-    showAsTable: false
-    view: "/views/services_page.tpl"
-    contents: "/content/services_page.yaml"
-    fields:
-      - name: "title"
-        label: "Title"
-        description: ""
-        datatype: "text"
-        sort: 10000
-        required: false
-        relationship: null
-        settings:
-          list: true
-      - name: "content"
-        label: "Content"
-        description: ""
-        datatype: "wysiwyg_basic"
-        sort: 10000
-        required: false
-        relationship: null
-        settings:
-          list: true
-      - name: "title2"
-        label: "Section 2 Title"
-        description: ""
-        datatype: "text"
-        sort: 10000
-        required: false
-        relationship: null
-        settings:
-          list: true
-      - name: "content2"
-        label: "Section 2 Content"
-        description: ""
-        datatype: "wysiwyg_basic"
-        sort: 10000
-        required: false
-        relationship: null
-        settings:
-          list: true
-  - description: ""
-    label: "Services"
-    name: "services"
-    sort: 121
-    listed: true
-    parent:
-      model: "services_page"
-      content: "our-services"
-    hasRoute: false
-    showAsTable: false
-    contents: "/content/services.yaml"
-    fields:
-      - name: "title"
-        label: "Title"
-        description: ""
-        datatype: "text"
-        sort: 10000
-        required: false
-        relationship: null
-        settings:
-          list: true
-      - name: "subtitle"
-        label: "Subtitle"
-        description: ""
-        datatype: "text"
-        sort: 10000
-        required: false
-        relationship: null
-        settings:
-          list: true
-      - name: "content"
-        label: "Content"
-        description: ""
-        datatype: "wysiwyg_basic"
-        sort: 10000
-        required: false
-        relationship: null
-        settings:
-          list: true
-      - name: "sort_order"
-        label: "Sort Order"
-        description: ""
-        datatype: "sort"
-        sort: 10000
-        required: false
-        relationship: null
-        settings:
-          list: true
+- description: null
+  label: "Services Page"
+  name: "services_page"
+  sort: 9
+  listed: true
+  parent: null
+  hasRoute: true
+  showAsTable: false
+  view: "/views/services_page.tpl"
+  contents: "/content/services_page.yaml"
+  fields:
+    - name: "title"
+      label: "Title"
+      description: ""
+      datatype: "text"
+      sort: 1
+      required: false
+      relationship: null
+      settings:
+        list: true
+    - name: "content"
+      label: "Content"
+      description: ""
+      datatype: "wysiwyg_basic"
+      sort: 2
+      required: false
+      relationship: null
+      settings:
+        list: true
+    - name: "title2"
+      label: "Section 2 Title"
+      description: ""
+      datatype: "text"
+      sort: 3
+      required: false
+      relationship: null
+      settings:
+        list: true
+    - name: "content2"
+      label: "Section 2 Content"
+      description: ""
+      datatype: "wysiwyg_basic"
+      sort: 4
+      required: false
+      relationship: null
+      settings:
+        list: true
+- description: null
+  label: "Services"
+  name: "services"
+  sort: 14
+  listed: true
+  parent: "services_page"
+  hasRoute: false
+  showAsTable: false
+  contents: "/content/services.yaml"
+  fields:
+    - name: "title"
+      label: "Title"
+      description: ""
+      datatype: "text"
+      sort: 1
+      required: false
+      relationship: null
+      settings:
+        list: true
+    - name: "subtitle"
+      label: "Subtitle"
+      description: ""
+      datatype: "text"
+      sort: 2
+      required: false
+      relationship: null
+      settings:
+        list: true
+    - name: "content"
+      label: "Content"
+      description: ""
+      datatype: "wysiwyg_basic"
+      sort: 3
+      required: false
+      relationship: null
+      settings:
+        list: true
+    - name: "sort_order"
+      label: "Sort Order"
+      description: ""
+      datatype: "sort"
+      sort: 4
+      required: false
+      relationship: null
+      settings:
+        list: true
